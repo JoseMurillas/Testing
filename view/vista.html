@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5" >
+        <form action="../src/logica.php" method="post">
+            <h1 class="">Formulario Clientes</h1>
+            <div class="form-group">
+                <input type="text" name="nombre" placeholder="Ingresa nombre" class="form-control" maxlength="70" required>
+                <br>
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="apellido" placeholder="Ingresa apellido" class="form-control"  maxlength="70" required>
+                <br>
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="direccion" placeholder="Ingresa dirección" class="form-control" maxlength="70">
+                <br>
+            </div>
+            <input type="text" name="correo" placeholder="Ingresa correo" class="form-control" maxlength="70" required>
+            <br>
+
+            Estado civil
+            <select name="estadoCivil" id="" class="form-control">
+                <option value="soltero">Soltero</option>
+                <option value="casado">Casado</option>
+                <option value="viudo">Viudo</option>
+                <option value="divorciado">Divorciado</option>
+            </select>
+            <br>
+
+            <input type="text" name="telefono" placeholder="Ingresa celular" class="form-control" maxlength="70">
+            <br>
+
+            Ingresa pais
+            <select name="paisCiudad" id="pais" class="form-control">
+                <optgroup label="Colombia">
+                    <option value="colombia-bogota">Bogotá</option>
+                    <option value="colombia-medellin">Medellín</option>
+                    <option value="colombia-cali">Cali</option>
+                    <option value="colombia-baranquilla">Barranquilla</option>
+                </optgroup>
+                <optgroup label="Ecuador">
+                    <option value="ecuador-quito">Quito</option>
+                    <option value="ecuador-guayaquil">Guayaquil</option>
+                    <option value="ecuador-esmeraldas">Esmeraldas</option>
+                    <option value="ecuador-riobamba">Riobamba</option>
+                </optgroup>
+                <optgroup label="Venezuela">
+                    <option value="venezuela-caracas">Caracas</option>
+                    <option value="venezuela-sancristobal">San Cristóbal</option>
+                    <option value="venezuela-merida">Mérida</option>
+                    <option value="venezuela-lecheria">Lechería</option>
+                </optgroup>
+            </select>   
+            
+            <br>
+
+            <div class="form-group text-center">
+                <input type="submit" class="btn btn-primary"></form>
+            </div>
+        </div>
+</body>
+</html>
